@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CalculadoraStyle.css">
+    <title>Simular Financiamento</title>
+</head>
+
+<body>
+    <main>
+        <!--Formulário-->
+        <form action="" method="POST" id="formulario">
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" class="input" placeholder="Digite seu nome" autofocus required>
+            </div>
+            <div class="form-group">
+                <label for="renda">Renda Mensal</label>
+                <input type="number" step="0.01" name="Renda Mensal" id="renda" class="input" placeholder="Ex: 4500,00"
+                    required>
+            </div>
+            <!--Botões-->
+            <div class="form-group">
+                <button type="submit" class="botao" id="BtnEnviar">Simular</button>
+                <button type="reset" class="botao" id="BtnLimpar">Limpar</button>
+            </div>
+            <div class="resultado" id="resultado">
+                <!--Resultados da Simulação-->
+                <div class="form-group">
+                    <label for="emprestimo">Valor liberado: </label>
+                    <input type="number" name="emprestimo" id="emprestimo" class="input" value="0.00" disabled>
+                </div>
+                <div class="form-group">
+                    <label for="parcela01">Parcela inicial: </label>
+                    <input type="number" name="parcela01" id="parcela01" class="input" value="0.00" disabled>
+                </div>
+                <div class="form-group">
+                    <label for="parcelaFinal">Parcela final: </label>
+                    <input type="number" name="parcelaFinal" id="parcelaFinal" class="input" value="0.00" disabled>
+                </div>
+                <div class="form-group">
+                    <label for="ValorMinMercado">Avaliação mínima de mercado: </label>
+                    <input type="number" name="ValorMinMercado" id="ValorMinMercado" class="input" value="0.00"
+                        disabled>
+                </div>
+                <div class="form-group">
+                    <label for="ValorMinVenda">Valor de venda mínima de mercado: </label>
+                    <input type="number" name="ValorMinVenda" id="ValorMinVenda" class="input" value="0.00" disabled>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <script src="calculaFinanciamento.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    /* height: 100vh; */
+    background: #efefef;
+    overflow-x: hidden;
+}
+
+main {
+    width: 100%;
+    padding: 1rem;
+    /* espacamento interno */
+}
+
+/* FORMULARIO */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+/* DIV DOS INPUTS */
+.form-group {
+    margin: 0.625rem;
+    font-weight: 500;
+}
+
+.input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+}
+
+/* INPUTS */
+input[type=number],
+input[type=text] {
+    border: 1px solid #ececec;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+/* BOTOES */
+.botao {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: white;
+    font-weight: 600;
+    color: black;
+}
+
+#BtnEnviar:hover {
+    background-color: #62C500;
+    color: white;
+    transition: 0.5s;
+}
+
+#BtnLimpar:hover {
+    background-color: rgb(216, 8, 8);
+    transition: 0.5s;
+}
+
+/* DIV #resultado */
+#resultado {
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+/*Responsividade*/
+@media only screen and (max-width: 1024px) {
+
+    /* DIV #resultado */
+    #resultado {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        background: #fff;
+    }
+}
